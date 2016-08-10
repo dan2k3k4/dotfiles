@@ -24,13 +24,15 @@
 [help]
   autocorrect = 1
 [push]
-  default = matching
+  default = simple
 [pager]
   diff = diff-highlight | less
   log = diff-highlight | least
   show = diff-highlight | less
 [rerere]
   enabled = true
+[commit]
+  gpgsign = true
 
 
 # -- Command flags ------------------------------------------------------------
@@ -78,4 +80,5 @@
   st = status
   count = shortlog -sn
   last = log -1 HEAD
+
 
