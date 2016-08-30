@@ -41,6 +41,7 @@
   prune = true
 [merge]
   ff = only
+  tool = diffmerge
 [pull]
   rebase = true
 [rebase]
