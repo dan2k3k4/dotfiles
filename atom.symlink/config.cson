@@ -24,6 +24,7 @@
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
+    tabType: "soft"
   "go-plus":
     goPath: "/Users/holman/Code/go"
   "release-notes":
