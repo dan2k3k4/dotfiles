@@ -10,10 +10,18 @@
   ui = true
 [core]
   editor = vim
+  autocrlf = false
+  safecrlf = false
+  filemode = false
+  ignorecase = false
   excludesfile = ~/.gitignore
   hooksPath = ~/.dotfiles/git/hooks
+[branch]
+  autosetuprebase = always
 [interactive]
   diffFilter = diff-highlight
+[diff]
+  renames = copies
 [apply]
   whitespace = nowarn
 [mergetool]
@@ -81,5 +89,3 @@
   st = status
   count = shortlog -sn
   last = log -1 HEAD
-
-
