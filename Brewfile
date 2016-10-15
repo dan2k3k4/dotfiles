@@ -22,6 +22,7 @@ brew 'spark'
 brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
+brew 'yarn'
 
 cask 'atom'
 cask 'firefox'

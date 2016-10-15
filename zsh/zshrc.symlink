@@ -42,3 +42,5 @@ unset config_files
 
 eval $(cachalot env)
 
+
+export PATH="$HOME/.yarn/bin:$PATH"
