@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'amazeeio/cachalot'
 
 brew 'ack'
 brew 'coreutils'
@@ -23,6 +24,9 @@ brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
 brew 'yarn'
+brew 'docker'
+brew 'docker-machine'
+brew 'cachalot'
 
 cask 'atom'
 cask 'firefox'
