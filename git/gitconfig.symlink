@@ -46,7 +46,7 @@
 # -- Command flags ------------------------------------------------------------
 
 [fetch]
-  prune = true
+	prune = true
 [merge]
   ff = only
   tool = diffmerge
