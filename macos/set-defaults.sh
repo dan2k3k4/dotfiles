@@ -21,14 +21,30 @@ chflags nohidden ~/Library
 
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Run the screensaver if we're in the bottom-left hot corner.
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 0
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool true
+
+# Enable subpixel font rendering on non-Apple LCDs
+defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+# Enable HiDPI display modes (requires restart)
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 # Hide Safari's bookmark bar.
 defaults write com.apple.Safari ShowFavoritesBar -bool false
