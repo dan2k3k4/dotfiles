@@ -27,6 +27,8 @@ brew 'yarn'
 brew 'docker'
 brew 'docker-machine'
 brew 'cachalot'
+brew 'cmake'
+brew 'asciinema'
 
 cask 'atom'
 cask 'firefox'

@@ -42,5 +42,4 @@ unset config_files
 
 eval $(cachalot env)
 
-
-export PATH="$HOME/.yarn/bin:$PATH"
+export DYLD_LIBRARY_PATH="$GOPATH/src/github.com/cloudson/gitql/libgit2/install/lib"
