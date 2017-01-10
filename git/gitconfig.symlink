@@ -19,6 +19,8 @@
   hooksPath = ~/.dotfiles/git/hooks
 [branch]
   autosetuprebase = always
+[submodule]
+  fetchJobs = 4
 [interactive]
   diffFilter = diff-highlight
 [diff]
