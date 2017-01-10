@@ -89,3 +89,6 @@
   st = status
   count = shortlog -sn
   last = log -1 HEAD
+  please = push --force-with-lease
+  it = !git init && git commit -m "root" --allow-empty
+
