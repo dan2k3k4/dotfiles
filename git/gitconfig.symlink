@@ -9,6 +9,7 @@
   branch = auto
   ui = true
 [core]
+  abbrev = 12
   editor = vim
   autocrlf = false
   safecrlf = false
