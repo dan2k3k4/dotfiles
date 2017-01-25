@@ -1,5 +1,4 @@
 # Patch/diff artifacts.
-*.patch
 *.diff
 *.orig
 *.rej
@@ -19,3 +18,5 @@ interdiff*.txt
 # Hidden files.
 .DS*
 .project
+.php_cs.cache
+

@@ -30,6 +30,7 @@ brew 'docker-machine'
 brew 'cachalot'
 brew 'cmake'
 brew 'asciinema'
+brew 'rethinkdb'
 
 cask 'atom'
 cask 'firefox'
