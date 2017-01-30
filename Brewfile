@@ -31,6 +31,7 @@ brew 'cachalot'
 brew 'cmake'
 brew 'asciinema'
 brew 'rethinkdb'
+brew 'exiftool'
 
 cask 'atom'
 cask 'firefox'
