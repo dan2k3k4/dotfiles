@@ -22,5 +22,5 @@ alias gm='cd $(git rev-parse --show-toplevel); git submodule --quiet sync ; git 
 alias gl="git log --abbrev-commit --decorate --date=relative --format=format:'%C(auto)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(green)<%an>%C(reset)%C(auto)%d%C(reset)'"
 alias glg="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(auto)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(green)<%an>%C(reset)%C(auto)%d%C(reset)'"
 alias gmb='git fetch && git merge-base origin/prod origin/dev'
-
+alias gtree="git log --oneline --decorate --all --graph"
 
