@@ -23,4 +23,5 @@ alias gl="git log --abbrev-commit --decorate --date=relative --format=format:'%C
 alias glg="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(auto)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(green)<%an>%C(reset)%C(auto)%d%C(reset)'"
 alias gmb='git fetch && git merge-base origin/prod origin/dev'
 alias gtree="git log --oneline --decorate --all --graph"
+alias gitclean='git branch --merged | grep -Ev "(\*|master|prod|dev|develop|staging|beta)" | xargs -n 1 git branch -d'
 

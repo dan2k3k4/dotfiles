@@ -17,6 +17,7 @@
   ignorecase = false
   excludesfile = ~/.gitignore
   hooksPath = ~/.dotfiles/git/hooks
+  trustctime = false
 [branch]
   autosetuprebase = always
 [submodule]
@@ -94,4 +95,15 @@
   last = log -1 HEAD
   please = push --force-with-lease
   it = !git init && git commit -m "root" --allow-empty
+  stsh = stash --keep-index
+  staash = stash --include-untracked
+  staaash = stash --all
+  standup = !git log \
+          --author=$USER \
+          --since='9am yesterday' \
+          --all \
+          --format=%s
+  lazy-standup = !git standup | say
+  which = !git branch -r | grep -i
+  lucky = !sh -c 'git checkout $(git which $1 -m1)' -
 

@@ -1,5 +1,6 @@
 "*":
   core:
+    audioBeep: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"
@@ -20,8 +21,10 @@
       "unity-ui"
       "glacier-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Menlo"
+    fontSize: 13
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
