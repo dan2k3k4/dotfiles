@@ -32,6 +32,7 @@ brew 'cmake'
 brew 'asciinema'
 brew 'rethinkdb'
 brew 'exiftool'
+brew 'php-cs-fixer'
 
 cask 'atom'
 cask 'firefox'
