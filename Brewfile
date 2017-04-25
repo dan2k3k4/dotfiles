@@ -1,7 +1,10 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'homebrew/php'
 tap 'amazeeio/cachalot'
+
+cask 'xquartz'
 
 brew 'ack'
 brew 'coreutils'
@@ -40,3 +43,4 @@ cask 'google-chrome'
 cask 'seashore'
 cask 'slack'
 cask 'vlc'
+
