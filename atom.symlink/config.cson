@@ -42,3 +42,6 @@
     ]
   welcome:
     showOnStartup: false
+".js.jsx.react.source":
+  editor:
+    autoIndent: true

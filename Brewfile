@@ -42,5 +42,7 @@ cask 'firefox'
 cask 'google-chrome'
 cask 'seashore'
 cask 'slack'
+cask 'steam'
+cask 'tunnelbear'
 cask 'vlc'
 
