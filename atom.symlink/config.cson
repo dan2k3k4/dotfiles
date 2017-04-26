@@ -21,7 +21,7 @@
       "unity-ui"
       "glacier-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     fontFamily: "Menlo"
     fontSize: 13
