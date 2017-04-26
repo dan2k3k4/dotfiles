@@ -16,8 +16,9 @@
   filemode = false
   ignorecase = false
   excludesfile = ~/.gitignore
-  hooksPath = ~/.dotfiles/git/hooks
+  #hooksPath = ~/.dotfiles/git/hooks
   trustctime = false
+  attributesfile = /Users/dan/.gitattributes
 [branch]
   autosetuprebase = always
 [submodule]
@@ -106,4 +107,5 @@
   lazy-standup = !git standup | say
   which = !git branch -r | grep -i
   lucky = !sh -c 'git checkout $(git which $1 -m1)' -
+  recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazee.com>
 
