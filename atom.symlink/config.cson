@@ -31,6 +31,8 @@
     tabType: "soft"
   "go-plus":
     goPath: "/Users/holman/Code/go"
+  "markdown-preview":
+    useGitHubStyle: true
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
