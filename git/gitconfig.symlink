@@ -4,10 +4,21 @@
 [hub]
   protocol = https
 [color]
-  diff = auto
   status = auto
   branch = auto
   ui = true
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
 [core]
   abbrev = 12
   editor = vim
@@ -24,7 +35,7 @@
 [submodule]
   fetchJobs = 4
 [interactive]
-  diffFilter = diff-highlight
+  diffFilter = diff-so-fancy
 [diff]
   renames = copies
 [apply]
@@ -39,7 +50,7 @@
 [push]
   default = simple
 [pager]
-  diff = diff-highlight | less
+  diff = diff-so-fancy | less
   log = diff-highlight | least
   show = diff-highlight | less
 [rerere]
@@ -74,6 +85,7 @@
 # -- Aliases ------------------------------------------------------------------
 
 [alias]
+  patch = !git --no-pager diff --no-color
   promote = !$ZSH/bin/git-promote
   wtf     = !$ZSH/bin/git-wtf
   rank-contributors = !$ZSH/bin/git-rank-contributors
@@ -114,3 +126,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[diff-so-fancy]
+	first-run = false
