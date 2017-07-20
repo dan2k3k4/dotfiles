@@ -40,7 +40,7 @@ foreach ($output as $file) {
         /**
          * PHP-CS-Fixer && add it back
          */
-          exec("php-cs-fixer fix {$fileName} --level=psr2 --fixers=-phpdoc_params");
+          exec("drupalcbf {$fileName}");
           exec("git add {$fileName}");
 
         } else {

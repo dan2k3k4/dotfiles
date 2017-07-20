@@ -29,7 +29,7 @@
   excludesfile = ~/.gitignore
   #hooksPath = ~/.dotfiles/git/hooks
   trustctime = false
-  attributesfile = /Users/dan/.gitattributes
+  attributesfile = ~/.gitattributes
 [branch]
   autosetuprebase = always
 [submodule]
@@ -120,6 +120,8 @@
   which = !git branch -r | grep -i
   lucky = !sh -c 'git checkout $(git which $1 -m1)' -
   recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazee.com>
+
+# -- Other --------------------------------------------------------------------
 
 [filter "lfs"]
 	required = true
