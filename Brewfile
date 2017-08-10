@@ -46,4 +46,5 @@ cask 'slack'
 cask 'steam'
 cask 'tunnelbear'
 cask 'vlc'
+cask 'insomnia'
 
