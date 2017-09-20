@@ -8,6 +8,8 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 
+alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
+
 alias psd="open -a /Applications/Adobe\ Photoshop\ CC\ 2017/Adobe\ Photoshop\ CC\ 2017.app"
 
 alias gam="~/.dotfiles/bin/gam/gam"
