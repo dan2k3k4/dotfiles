@@ -29,7 +29,7 @@
   excludesfile = ~/.gitignore
   #hooksPath = ~/.dotfiles/git/hooks
   trustctime = false
-  attributesfile = ~/.gitattributes
+  #attributesfile = ~/.gitattributes
 [branch]
   autosetuprebase = always
 [submodule]
@@ -116,10 +116,11 @@
           --since='9am yesterday' \
           --all \
           --format=%s
-  lazy-standup = !git standup | say
+  lazy-standup = !git standup | say -v Daniel -r 250
   which = !git branch -r | grep -i
   lucky = !sh -c 'git checkout $(git which $1 -m1)' -
   recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazee.com>
+  find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
 
 # -- Other --------------------------------------------------------------------
 
