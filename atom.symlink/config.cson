@@ -39,9 +39,7 @@
       "background-tips"
       "exception-reporting"
       "metrics"
-      "react"
       "linter-rubocop"
-      "tree-view"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -55,8 +53,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
     titleBar: "custom"
   editor:
