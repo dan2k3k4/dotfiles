@@ -121,6 +121,7 @@
   lucky = !sh -c 'git checkout $(git which $1 -m1)' -
   recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazee.com>
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
+  find-diff = log -p --grep
 
 # -- Other --------------------------------------------------------------------
 
