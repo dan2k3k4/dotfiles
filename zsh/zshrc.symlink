@@ -40,8 +40,6 @@ done
 
 unset config_files
 
-eval $(cachalot env)
-
 export DYLD_LIBRARY_PATH="$GOPATH/src/github.com/cloudson/gitql/libgit2/install/lib"
 
 export NVM_DIR="$HOME/.nvm"
