@@ -1,7 +1,6 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
-tap 'homebrew/php'
 tap 'puma/puma'
 
 cask 'xquartz'
