@@ -35,7 +35,7 @@
 [submodule]
   fetchJobs = 4
 [interactive]
-  diffFilter = diff-so-fancy
+  #diffFilter = diff-so-fancy
 [diff]
   renames = copies
 [apply]
