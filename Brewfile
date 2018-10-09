@@ -50,4 +50,5 @@ cask 'insomnia'
 cask 'inkscape'
 cask 'rocket-chat'
 cask 'spotmenu'
+cask 'visual-studio-code'
 
