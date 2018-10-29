@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 tap 'puma/puma'
+tap 'wagoodman/dive'
 
 cask 'xquartz'
 
@@ -37,6 +38,7 @@ brew 'rethinkdb'
 brew 'exiftool'
 brew 'php-cs-fixer'
 brew 'fribidi'
+brew 'dive'
 
 cask 'atom'
 cask 'firefox'
