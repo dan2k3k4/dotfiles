@@ -38,6 +38,8 @@
   #diffFilter = diff-so-fancy
 [diff]
   renames = copies
+[diff "image"]
+  command = git-diff-image
 [apply]
   whitespace = nowarn
 [mergetool]
@@ -122,6 +124,7 @@
   recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazee.com>
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
   find-diff = log -p --grep
+  diff-image = "!f() { GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
 
 # -- Other --------------------------------------------------------------------
 
@@ -132,3 +135,4 @@
 	process = git-lfs filter-process
 [diff-so-fancy]
 	first-run = false
+
