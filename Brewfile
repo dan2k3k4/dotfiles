@@ -43,6 +43,7 @@ brew 'fribidi'
 brew 'dive'
 brew 'tree'
 brew 'wget'
+brew 'mariadb'
 
 cask 'atom'
 cask 'firefox'
