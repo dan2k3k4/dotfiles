@@ -44,6 +44,7 @@ brew 'dive'
 brew 'tree'
 brew 'wget'
 brew 'mariadb'
+brew 'direnv'
 
 cask 'atom'
 cask 'firefox'
