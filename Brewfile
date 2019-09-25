@@ -45,6 +45,7 @@ brew 'tree'
 brew 'wget'
 brew 'mariadb'
 brew 'direnv'
+brew 'ahoy'
 
 cask 'atom'
 cask 'firefox'

@@ -1,9 +1,17 @@
 #!/bin/sh
 
-if [ "$1" != "uni-heidelberg_de" ]
-then
-  curl -s -k -X POST -d projectName=$1 -d branchName=$2  https://rest2tasks-lagoon-master.lagoon.ch.amazee.io/deploy | jq '.'
-else
-  curl -s -k -X POST -d projectName=$1 -d branchName=$2  http://rest2tasks-lagoon.web-vmw-drupal.urz.uni-heidelberg.de/deploy | jq '.'
-fi
+token="`cat ~/.lagoon-token`"
+project="$1"
+environment="$2"
+
+echo "\n"
+
+curl \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer $token" \
+    --data "{ \"query\": \"mutation { deployEnvironmentLatest( input: { environment: { project: { name: \\\"$project\\\" }, name: \\\"$environment\\\" } }) }\" }" \
+    https://api.lagoon.amazeeio.cloud/graphql | jq
+
+echo "\n"
 
