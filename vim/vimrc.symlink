@@ -95,3 +95,10 @@ let g:airline_right_sep = ''
 
 set colorcolumn=80
 
+" -- Pathogen -----------------------------------------------------------------
+" -- Requires pathogen to be setup first:
+" -- mkdir -p ~/.vim/autoload ~/.vim/bundle
+" -- curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+execute pathogen#infect()
+
