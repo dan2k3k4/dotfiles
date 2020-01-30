@@ -50,6 +50,7 @@ brew 'ahoy'
 brew 'vale'
 brew 'tmuxinator'
 brew 'git-flow'
+brew 'azure-cli'
 
 cask 'atom'
 cask 'firefox'
