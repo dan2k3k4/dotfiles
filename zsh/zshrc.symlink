@@ -60,6 +60,9 @@ export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+plugins=(git-flow-completion)
+
 # Setup direnv
 eval "$(direnv hook zsh)"
 
@@ -71,3 +74,4 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
