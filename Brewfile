@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 tap 'puma/puma'
 tap 'wagoodman/dive'
+tap 'valelint/vale'
 
 cask 'xquartz'
 
@@ -46,6 +47,9 @@ brew 'wget'
 brew 'mariadb'
 brew 'direnv'
 brew 'ahoy'
+brew 'vale'
+brew 'tmuxinator'
+brew 'git-flow'
 
 cask 'atom'
 cask 'firefox'

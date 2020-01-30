@@ -45,6 +45,7 @@ export DYLD_LIBRARY_PATH="$GOPATH/src/github.com/cloudson/gitql/libgit2/install/
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
