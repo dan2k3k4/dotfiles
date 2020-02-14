@@ -51,6 +51,7 @@ brew 'vale'
 brew 'tmuxinator'
 brew 'git-flow'
 brew 'azure-cli'
+brew 'github/gh/gh'
 
 cask 'atom'
 cask 'firefox'
