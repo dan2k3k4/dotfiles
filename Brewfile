@@ -60,6 +60,7 @@ brew 'zsh-autosuggestions'
 brew 'go'
 brew 'composer'
 brew 'azure-functions-core-tools@3'
+brew 'contentful-cli'
 
 cask 'atom'
 cask 'firefox'
