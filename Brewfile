@@ -63,6 +63,7 @@ brew 'composer'
 brew 'azure-functions-core-tools@3'
 brew 'contentful-cli'
 brew 'netlifyctl'
+brew 'gnupg'
 
 cask 'atom'
 cask 'firefox'
@@ -91,3 +92,5 @@ cask 'sequel-pro'
 cask 'phpstorm'
 
 
+# Amphetamine
+mas "Amphetamine", id: 937984704
