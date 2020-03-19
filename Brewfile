@@ -6,10 +6,13 @@ tap 'wagoodman/dive'
 tap 'valelint/vale'
 tap 'azure/functions'
 tap 'netlify/netlifyctl'
+tap 'amazeeio/lagoon-cli'
 
+# Required apps before installing others.
 cask 'xquartz'
 brew 'mas'
 
+# Brew apps
 brew 'ack'
 brew 'coreutils'
 brew 'go'
@@ -64,7 +67,11 @@ brew 'azure-functions-core-tools@3'
 brew 'contentful-cli'
 brew 'netlifyctl'
 brew 'gnupg'
+brew 'cloudfoundry/tap/cf-cli'
+brew 'lagoon'
+brew 'awscli'
 
+# Cask applications
 cask 'atom'
 cask 'firefox'
 cask 'google-chrome'
@@ -90,7 +97,10 @@ cask 'iterm2'
 cask 'postman'
 cask 'sequel-pro'
 cask 'phpstorm'
+cask 'bettertouchtool'
+cask 'tunnelblick'
 
-
-# Amphetamine
+# Apple Store apps
 mas "Amphetamine", id: 937984704
+mas "Magnet", id: 441258766
+
