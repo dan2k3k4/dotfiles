@@ -13,6 +13,8 @@ cask 'xquartz'
 brew 'mas'
 
 # Brew apps
+brew 'git'
+brew 'hub'
 brew 'ack'
 brew 'coreutils'
 brew 'go'
@@ -99,6 +101,12 @@ cask 'sequel-pro'
 cask 'phpstorm'
 cask 'bettertouchtool'
 cask 'tunnelblick'
+cask 'sublime-text'
+cask 'spectacle'
+cask 'microsoft-edge'
+cask 'deluge'
+cask 'flux'
+cask 'kap'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
