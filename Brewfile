@@ -107,8 +107,12 @@ cask 'microsoft-edge'
 cask 'deluge'
 cask 'flux'
 cask 'kap'
+cask 'microsoft-teams'
+cask 'avidemux'
+cask 'discord'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
 mas "Magnet", id: 441258766
+mas "Xcode", id: 497799835
 
