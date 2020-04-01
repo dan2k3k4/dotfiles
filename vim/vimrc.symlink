@@ -18,6 +18,7 @@ set showcmd
 set hlsearch
 
 " Ignore modelines, this is 21st century
+set modelines=0
 set nomodeline
 
 " Make vim always understand xterm special keys
