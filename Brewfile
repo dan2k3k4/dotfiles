@@ -111,6 +111,7 @@ cask 'microsoft-teams'
 cask 'avidemux'
 cask 'discord'
 cask 'diffmerge'
+cask 'artpip'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
