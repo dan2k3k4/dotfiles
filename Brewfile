@@ -7,6 +7,7 @@ tap 'valelint/vale'
 tap 'azure/functions'
 tap 'netlify/netlifyctl'
 tap 'amazeeio/lagoon-cli'
+tap 'homebrew/cask-drivers'
 
 # Required apps before installing others.
 cask 'xquartz'
@@ -112,6 +113,10 @@ cask 'avidemux'
 cask 'discord'
 cask 'diffmerge'
 cask 'artpip'
+cask 'graphiql'
+cask 'free-ruler'
+cask 'jitsi-meet'
+cask 'twitch'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
