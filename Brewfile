@@ -3,7 +3,6 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 tap 'puma/puma'
 tap 'wagoodman/dive'
-tap 'valelint/vale'
 tap 'azure/functions'
 tap 'netlify/netlifyctl'
 tap 'amazeeio/lagoon-cli'
@@ -73,6 +72,9 @@ brew 'gnupg'
 brew 'cloudfoundry/tap/cf-cli'
 brew 'lagoon'
 brew 'awscli'
+brew 'fzf'
+brew 'swi-prolog'
+brew 'doctl'
 
 # Cask applications
 cask 'atom'
@@ -117,6 +119,10 @@ cask 'graphiql'
 cask 'free-ruler'
 cask 'jitsi-meet'
 cask 'twitch'
+cask 'obs'
+cask 'krisp'
+cask 'istat-menus'
+cask 'keybase'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
