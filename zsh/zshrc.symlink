@@ -75,7 +75,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
 # Custom plugins may be added to $DOTFILES/plugins/
-plugins=(git git-flow-completion zsh-autosuggestions)
+plugins=(git git-flow-completion zsh-autosuggestions git-open)
 
 # Setup direnv
 eval "$(direnv hook zsh)"

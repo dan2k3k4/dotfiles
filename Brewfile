@@ -108,7 +108,7 @@ cask 'phpstorm'
 cask 'bettertouchtool'
 cask 'tunnelblick'
 cask 'sublime-text'
-cask 'spectacle'
+cask 'rectangle'
 cask 'microsoft-edge'
 cask 'deluge'
 cask 'flux'
@@ -128,6 +128,7 @@ cask 'istat-menus'
 cask 'keybase'
 cask 'lando'
 cask 'mattermost'
+cask 'responsively'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
