@@ -129,6 +129,7 @@ cask 'keybase'
 cask 'lando'
 cask 'mattermost'
 cask 'responsively'
+cask 'pocket-casts'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
