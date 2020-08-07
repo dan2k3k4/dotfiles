@@ -14,6 +14,7 @@ brew 'mas'
 
 # Brew apps
 brew 'git'
+brew 'git-lfs'
 brew 'hub'
 brew 'ack'
 brew 'coreutils'
