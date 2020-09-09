@@ -135,6 +135,6 @@ cask 'vnc-viewer'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
-mas "Magnet", id: 441258766
+#mas "Magnet", id: 441258766
 mas "Xcode", id: 497799835
 
