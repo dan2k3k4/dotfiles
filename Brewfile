@@ -131,6 +131,7 @@ cask 'lando'
 cask 'mattermost'
 cask 'responsively'
 cask 'pocket-casts'
+cask 'vnc-viewer'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
