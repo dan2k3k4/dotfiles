@@ -30,6 +30,8 @@
   #hooksPath = ~/.dotfiles/git/hooks
   trustctime = false
   #attributesfile = ~/.gitattributes
+[init]
+  defaultBranch = main
 [branch]
   autosetuprebase = always
 [submodule]
@@ -106,7 +108,6 @@
   rba = rebase --abort
   rbc = rebase --continue
   st = status
-  count = shortlog -sn
   last = log -1 HEAD
   please = push --force-with-lease
   it = !git init && git commit -m "root" --allow-empty
@@ -128,11 +129,6 @@
 
 # -- Other --------------------------------------------------------------------
 
-[filter "lfs"]
-  required = true
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
 [diff-so-fancy]
   first-run = false
 
