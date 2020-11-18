@@ -79,6 +79,7 @@ brew 'swi-prolog'
 brew 'doctl'
 brew 'thefuck'
 brew 'openshift-cli'
+brew 'dog'
 
 # Cask applications
 cask 'firefox'
@@ -132,6 +133,7 @@ cask 'mattermost'
 cask 'responsively'
 cask 'pocket-casts'
 cask 'vnc-viewer'
+cask 'db-browser-for-sqlite'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
