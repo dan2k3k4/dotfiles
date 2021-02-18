@@ -40,6 +40,9 @@
   #diffFilter = diff-so-fancy
 [diff]
   renames = copies
+  #tool = Kaleidoscope
+  tool = diffmerge
+  wsErrorHighlight = all
 [diff "image"]
   command = git-diff-image
 [apply]
@@ -47,8 +50,13 @@
 [mergetool]
   keepBackup = false
   prompt = false
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
 [difftool]
   prompt = false
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [help]
   autocorrect = 1
 [push]
@@ -69,6 +77,7 @@
   prune = true
 [merge]
   ff = only
+  #tool = Kaleidoscope
   tool = diffmerge
 [pull]
   rebase = true
@@ -134,3 +143,9 @@
 
 [url "git@github.com:"]
   insteadOf = https://github.com/
+
+[merge "composer_json"]
+  name = composer JSON file merge driver
+  driver = composer-git-merge-driver %O %A %B %L %P
+  recursive = binary
+
