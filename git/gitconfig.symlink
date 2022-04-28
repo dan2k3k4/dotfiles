@@ -131,7 +131,7 @@
   lazy-standup = !git standup | say -v Daniel -r 250
   which = !git branch -r | grep -i
   lucky = !sh -c 'git checkout $(git which $1 -m1)' -
-  recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazee.com>
+  recap = log --since=\"00:00:00\" --no-merges --oneline --author=<daniel.lemon@amazeelabs.com>
   find = log --all --pretty=\"format:%Cgreen%H %Cblue%s\n%b%Creset\" --name-status --grep
   find-diff = log -p --grep
   diff-image = "!f() { GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
@@ -149,3 +149,8 @@
   driver = composer-git-merge-driver %O %A %B %L %P
   recursive = binary
 
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

@@ -6,6 +6,8 @@ tap 'wagoodman/dive'
 tap 'netlify/netlifyctl'
 tap 'amazeeio/lagoon-cli'
 tap 'homebrew/cask-drivers'
+tap 'ankitpokhrel/jira-cli'
+tap 'pygmystack/pygmy'
 
 # Required apps before installing others.
 cask 'xquartz'
@@ -85,6 +87,8 @@ brew 'glab'
 brew 'lab'
 brew 'htop'
 brew 'ctop'
+brew 'jira-cli'
+brew 'pygmy'
 
 # Cask applications
 cask 'firefox'
