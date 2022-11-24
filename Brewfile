@@ -4,7 +4,7 @@ tap 'homebrew/bundle'
 tap 'puma/puma'
 tap 'wagoodman/dive'
 tap 'netlify/netlifyctl'
-tap 'amazeeio/lagoon-cli'
+tap 'uselagoon/lagoon-cli'
 tap 'homebrew/cask-drivers'
 tap 'ankitpokhrel/jira-cli'
 tap 'pygmystack/pygmy'
@@ -89,6 +89,7 @@ brew 'htop'
 brew 'ctop'
 brew 'jira-cli'
 brew 'pygmy'
+brew 'duti'
 
 # Cask applications
 cask 'firefox'
@@ -141,6 +142,7 @@ cask 'vnc-viewer'
 cask 'db-browser-for-sqlite'
 cask 'blackhole'
 cask 'lens'
+cask 'handbrake'
 
 # Apple Store apps
 mas "Amphetamine", id: 937984704
