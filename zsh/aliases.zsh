@@ -12,7 +12,7 @@ alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
 
 alias psd="open -a /Applications/Adobe\ Photoshop\ CC\ 2017/Adobe\ Photoshop\ CC\ 2017.app"
 
-alias gam="~/.dotfiles/bin/gam/gam"
+function gam() { "~/bin/gam/gam" "$@" ; }
 
 function clear-image-exif-data() {
   exiftool -all= $1
