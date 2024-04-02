@@ -1,0 +1,11 @@
+#!/bin/sh
+
+for file in `git ls-files $1`
+do
+  if [ -e $file ]; then
+    HASH=`git rev-list HEAD $file | tail -n 1`
+    DATE=`git show -s --format="%ci" $HASH --`
+    printf "%-35s %s - %s\n" $file $HASH "$DATE"
+  fi
+done
+

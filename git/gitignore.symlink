@@ -1,3 +1,22 @@
-.DS_Store
+# Patch/diff artifacts.
+*.diff
+*.orig
+*.rej
+interdiff*.txt
+
+# emacs artifacts.
 *~
+\#*\#
+
+# VI swap file
 *.swp
+
+# PHPStorm
+.idea
+.idea/*
+
+# Hidden files.
+.DS*
+.project
+.php_cs.cache
+

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#
+# Usage:
+# ./remove-merged <branch>
+#
+# if no branch given, use the current branch
+#
+
+targetBranch=$1
+
+# if no target branch given, assume it is the current branch
+if [ "$targetBranch" == "" ]; then
+  targetBranch=$(git branch | grep \* | sed -E 's/\* (.*)$/\1/g')
+fi
+
+# get remote branches that needs to be deleted
+branchesToDelete=$(git branch -r --merged $targetBranch \
+  | grep -v $targetBranch \
+  | grep -v '/HEAD')
+
+for b in $branchesToDelete; do
+  remote=$(echo $b | sed -E 's/([^/]*).*/\1/g')
+  bName=$(echo $b | sed -E 's/[^/]*\/(.*)/\1/g')
+
+  # git push $remote :$bName
+  echo "git push $remote :$bName"
+
+done
+

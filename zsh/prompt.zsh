@@ -28,7 +28,7 @@ git_dirty() {
 }
 
 git_prompt_info () {
- ref=$($git symbolic-ref HEAD 2>/dev/null) || return
+ ref=$($git symbolic-ref HEAD 2>/dev/null) || (echo "detached HEAD" && return)
 # echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
  echo "${ref#refs/heads/}"
 }
@@ -55,18 +55,17 @@ directory_name() {
 }
 
 battery_status() {
-  if test ! "$(uname)" = "Darwin"
-  then
-    exit 0
-  fi
-
   if [[ $(sysctl -n hw.model) == *"Book"* ]]
   then
     $ZSH/bin/battery-status
   fi
 }
 
-export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty)$(need_push)\n› '
+directory_name() {
+  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+}
+
+export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty)$(need_push) %{$fg_bold[cyan]%}%T%{$reset_color%}\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }

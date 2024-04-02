@@ -1,0 +1,17 @@
+#!/bin/sh
+
+token="`cat ~/.lagoon-token`"
+project="$1"
+environment="$2"
+
+echo "\n"
+
+curl \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer $token" \
+    --data "{ \"query\": \"mutation { deployEnvironmentLatest( input: { environment: { project: { name: \\\"$project\\\" }, name: \\\"$environment\\\" } }) }\" }" \
+    https://api.lagoon.amazeeio.cloud/graphql | jq
+
+echo "\n"
+

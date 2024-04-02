@@ -1,1 +1,2 @@
-export EDITOR='code'
+export GIT_EDITOR='vim'
+export EDITOR='vim'
