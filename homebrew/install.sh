@@ -11,7 +11,7 @@ then
   echo "  Installing Homebrew for you."
 
   # Install homebrew
-  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
+  curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
 
 fi
 
